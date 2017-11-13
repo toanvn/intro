@@ -12,6 +12,8 @@
 		C24713AC1FB595DD0061F18C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24713AA1FB595DD0061F18C /* Main.storyboard */; };
 		C24713AE1FB595DD0061F18C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24713AD1FB595DD0061F18C /* Assets.xcassets */; };
 		C24713B11FB595DD0061F18C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24713AF1FB595DD0061F18C /* LaunchScreen.storyboard */; };
+		C24713B91FB5960D0061F18C /* SwiftyOnboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24713B81FB5960D0061F18C /* SwiftyOnboardVC.swift */; };
+		C24713BB1FB596540061F18C /* DemoOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24713BA1FB596540061F18C /* DemoOneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C24713AD1FB595DD0061F18C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C24713B01FB595DD0061F18C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C24713B21FB595DD0061F18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C24713B81FB5960D0061F18C /* SwiftyOnboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyOnboardVC.swift; path = ../../SwiftyOnboardVC/SwityOnboardVCSource/SwiftyOnboardVC.swift; sourceTree = "<group>"; };
+		C24713BA1FB596540061F18C /* DemoOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoOneViewController.swift; path = ../../SwiftyOnboardVC/SwiftyOnboardVC/DemoOneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		C24713A51FB595DD0061F18C /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				C24713BA1FB596540061F18C /* DemoOneViewController.swift */,
+				C24713B81FB5960D0061F18C /* SwiftyOnboardVC.swift */,
 				C24713A61FB595DD0061F18C /* AppDelegate.swift */,
 				C24713A81FB595DD0061F18C /* ViewController.swift */,
 				C24713AA1FB595DD0061F18C /* Main.storyboard */,
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24713BB1FB596540061F18C /* DemoOneViewController.swift in Sources */,
 				C24713A91FB595DD0061F18C /* ViewController.swift in Sources */,
+				C24713B91FB5960D0061F18C /* SwiftyOnboardVC.swift in Sources */,
 				C24713A71FB595DD0061F18C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +289,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tx.Intro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tx.Intro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

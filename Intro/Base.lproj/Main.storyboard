@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,139 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Intro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main app view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-ii-HZk">
+                                <rect key="frame" x="16" y="83" width="343" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="textColor" red="0.99610143899917603" green="0.99227577447891235" blue="0.99203377962112427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLi-Hc-qId">
+                                <rect key="frame" x="96" y="318" width="182" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97269719839096069" green="0.95921438932418823" blue="0.9016338586807251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Intro"/>
+                                <connections>
+                                    <action selector="showWalkthough" destination="BYZ-38-t0r" eventType="touchUpInside" id="JdX-kM-7XI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.41816622018814087" blue="1" alpha="0.5137253852739726" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="208.80000000000001" y="121.88905547226388"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ScW-ge-KfE">
+            <objects>
+                <viewController storyboardIdentifier="intro1" id="Lqp-CR-YFr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dj6-eg-1Sk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro-bg1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YOF-6U-TYq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gp cho nhieu moi biet dung hay saai chhu 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsa-6v-qe4">
+                                <rect key="frame" x="16" y="98" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47789889574050903" green="0.9256325364112854" blue="0.18681058287620544" alpha="0.38353488869863012" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YOF-6U-TYq" firstAttribute="bottom" secondItem="wCH-jc-9xe" secondAttribute="bottom" id="3Lh-bI-3JD"/>
+                            <constraint firstItem="YOF-6U-TYq" firstAttribute="top" secondItem="dj6-eg-1Sk" secondAttribute="top" id="6ek-YU-R7t"/>
+                            <constraint firstItem="YOF-6U-TYq" firstAttribute="trailing" secondItem="wCH-jc-9xe" secondAttribute="trailing" id="A4V-9W-S1R"/>
+                            <constraint firstItem="YOF-6U-TYq" firstAttribute="leading" secondItem="wCH-jc-9xe" secondAttribute="leading" id="jhb-zq-261"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wCH-jc-9xe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHa-QH-N2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917.60000000000002" y="122.78860569715144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VfB-9S-wKH">
+            <objects>
+                <viewController storyboardIdentifier="intro2" id="CNG-IZ-HNj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Op8-PV-vnf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro-bg2" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Giy-pE-wL5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gp cho nhieu moi biet dung hay saai chhu 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxC-rI-zoy">
+                                <rect key="frame" x="16" y="63" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96861976390000004" green="0.93220657110000005" blue="0.13584849239999999" alpha="0.4726294948630137" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Giy-pE-wL5" firstAttribute="leading" secondItem="Aoq-sM-iSv" secondAttribute="leading" id="0Zn-Du-woS"/>
+                            <constraint firstItem="Giy-pE-wL5" firstAttribute="trailing" secondItem="Aoq-sM-iSv" secondAttribute="trailing" id="5Fb-XW-kmd"/>
+                            <constraint firstItem="Giy-pE-wL5" firstAttribute="top" secondItem="Op8-PV-vnf" secondAttribute="top" id="Eel-1H-5et"/>
+                            <constraint firstItem="Giy-pE-wL5" firstAttribute="bottom" secondItem="Aoq-sM-iSv" secondAttribute="bottom" id="w9U-0o-Wje"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Aoq-sM-iSv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHh-Xn-m8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.5999999999999" y="125.4872563718141"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tc8-ma-7KC">
+            <objects>
+                <viewController storyboardIdentifier="intro3" id="8Z7-cp-dhz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2yn-Uf-PjC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro-bg3" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zx2-mp-xjW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gp cho nhieu moi biet dung hay saai chhu 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPE-tA-f3E">
+                                <rect key="frame" x="21" y="89" width="335" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93599569797515869" green="0.19423836469650269" blue="0.70972782373428345" alpha="0.2810359589041096" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zx2-mp-xjW" firstAttribute="bottom" secondItem="lLp-tp-yL4" secondAttribute="bottom" id="YIM-in-eaH"/>
+                            <constraint firstItem="Zx2-mp-xjW" firstAttribute="top" secondItem="2yn-Uf-PjC" secondAttribute="top" id="r6F-fi-Qjj"/>
+                            <constraint firstItem="Zx2-mp-xjW" firstAttribute="leading" secondItem="lLp-tp-yL4" secondAttribute="leading" id="rgC-if-0VA"/>
+                            <constraint firstItem="Zx2-mp-xjW" firstAttribute="trailing" secondItem="lLp-tp-yL4" secondAttribute="trailing" id="tcD-FB-CNI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lLp-tp-yL4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0f6-bh-T4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2261.5999999999999" y="136.28185907046478"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="intro-bg1" width="480" height="329"/>
+        <image name="intro-bg2" width="426" height="240"/>
+        <image name="intro-bg3" width="426" height="240"/>
+    </resources>
 </document>
